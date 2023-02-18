@@ -1,0 +1,21 @@
+// -------------- wrapper -------------- //
+@mixin w_full (){
+    width: 100%;
+}
+
+@mixin w_fixed (){
+    width: 1280px;
+    margin: 0 auto;
+}
+
+// 範例：
+
+// 滿版
+// .wrapper_full{
+//     @include wrapper(100%);
+// }
+
+// 1280px
+// .wrapper_fixed{
+//     @include wrapper(1280px);
+// }

@@ -1,0 +1,15 @@
+// viewport
+$tablet_break:720px;
+$mobile_break:428px;
+
+@mixin tablet(){
+    @media all and (max-width: $tablet_break){
+        @content;
+    }
+}
+
+@mixin mobile(){
+    @media all and (max-width: $mobile_break){
+        @content;
+    }
+}
