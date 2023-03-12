@@ -11,11 +11,11 @@
 // 範例：
 
 // 滿版
-// .wrapper_full{
-//     @include wrapper(100%);
-// }
+.wrapper_full{
+    @include wrapper(100%);
+}
 
 // 1280px
-// .wrapper_fixed{
-//     @include wrapper(1280px);
-// }
+.wrapper_fixed{
+    @include wrapper(1280px);
+}

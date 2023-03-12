@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DannyLiii/Dog/issues"
   },
-  "homepage": "https://github.com/DannyLiii/Dog#readme"
+  "homepage": "https://github.com/DannyLiii/Dog#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
