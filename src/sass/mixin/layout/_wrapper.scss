@@ -12,10 +12,10 @@
 
 // 滿版
 .wrapper_full{
-    @include wrapper(100%);
+    @include w_full();
 }
 
 // 1280px
 .wrapper_fixed{
-    @include wrapper(1280px);
+    @include w_fixed();
 }

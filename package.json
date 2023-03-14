@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "安裝所有套件": "npm i",
+    "開發用": "gulp",
+    "清除打包": "gulp c",
     "上線用": "gulp package",
-    "開發用": "gulp"
+    "安裝所有套件": "npm i"
+    
   },
   "repository": {
     "type": "git",
