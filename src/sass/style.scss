@@ -4,5 +4,22 @@
 @import "pages/pages";
 
 body{
-    margin: 0 auto;
+    box-sizing: border-box;
+    font-family:"Noto Sans TC";
+    font-size: 16px;
+    text-decoration: none;
+    color: $black;
+}
+
+a:not(.no-change-color) {
+    text-decoration: none;
+}
+
+.wrapper_full{
+    @include w_full();
+}
+
+// 1280px
+.wrapper_fixed{
+    @include w_fixed();
 }

@@ -1,0 +1,43 @@
+// 引用字體大小變數
+@import "path/to/font-sizes.scss";
+
+// 定義字體大小
+$font-size : (
+    "h1": 48px ,
+    "h2": 36px ,
+    "h3": 32px ,
+    "h4": 30px ,
+    "h5": 24px ,
+    "h6": 20px ,
+    ".font": 16px
+);
+
+// 設置標題樣式
+h1 {
+  font-size: map-get($font-size, "h1");
+}
+
+h2 {
+  font-size: map-get($font-size, "h2");
+}
+
+h3 {
+  font-size: map-get($font-size, "h3");
+}
+
+h4 {
+  font-size: map-get($font-size, "h4");
+}
+
+h5 {
+  font-size: map-get($font-size, "h5");
+}
+
+h6 {
+  font-size: map-get($font-size, "h6");
+}
+
+// 設置文字樣式
+.font {
+  font-size: map-get($font-size, ".font");
+}
