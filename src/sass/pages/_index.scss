@@ -1,24 +1,107 @@
 header{
+  position: relative;
   background-color: #ffffff;
+  box-shadow: 0 0 5px 0 gray;
   display: flex;
-  justify-content: space-around;
-
 
   a{
+    flex-grow: 1;
     img{
-
+      width: 304px;
+      margin: 5% auto;
+      @media screen and (max-width: 950px) {
+        width: 200px;
+      }
     }
   }
 
   nav{
+    flex-grow: 10;
+    margin: auto 0;
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
     ul{
         display: flex;
         li{
+          margin: 0 4.5%;
+          @media screen and (max-width: 1280px) {
+            margin: 0 2%;
+          }
+          
             a{
-                // text-decoration: none;
+              display: block;
+              font-size: 20px;
+              padding: auto 2%;
+              color: $blue;
+              &:hover{
+                color: $yellow
+              }
             }
         }
     }
-    
   }
+
+  .icon{
+    display: block;
+    cursor: pointer;
+    flex-grow: 3.5;
+    margin: auto ;
+    font-size: 30px;
+    color: $blue;
+    .fa-bars{
+      display: none;
+      @media screen and (max-width: 950px) {
+        display: inline;
+      }
+      
+    }
+
+    @media screen and (max-width: 1280px) {
+      text-align: right;
+      margin-right: 30px;
+    }
+  }
+
+  section{
+    background-color: $blue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 130px;
+    height: 162px;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 5px 0 gray;
+    margin: auto;
+    padding: 3% 5px;
+    .line{
+      background-color: #ffffff;
+      width: 70%;
+      height: 1px;
+      margin: 10% auto;
+    }
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+ .menu{
+  display: none;
+
+  
+  
+  @media screen and (max-width: 950px) {
+    display: block;
+  }
+ }
+
+
 }
+
+
+
+
