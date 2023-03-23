@@ -1,15 +1,26 @@
+body{
+  position: relative;
+}
+
 header{
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 0 5px 0 gray;
   display: flex;
+  height: 125px;
+  @media screen and (max-width: 900px) {
+    height: 90px;
+  }
+  @media screen and (max-width: 428px) {
+    height: 80px;
+  }
 
   a{
     flex-grow: 1;
     img{
       width: 304px;
       margin: 5% auto;
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 900px) {
         width: 200px;
       }
     }
@@ -18,11 +29,12 @@ header{
   nav{
     flex-grow: 10;
     margin: auto 0;
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
     ul{
         display: flex;
+        justify-content: space-around;
         li{
           margin: 0 4.5%;
           @media screen and (max-width: 1280px) {
@@ -31,7 +43,7 @@ header{
           
             a{
               display: block;
-              font-size: 20px;
+              font-size: 19px;
               padding: auto 2%;
               color: $blue;
               &:hover{
@@ -51,7 +63,7 @@ header{
     color: $blue;
     .fa-bars{
       display: none;
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 900px) {
         display: inline;
       }
       
@@ -64,13 +76,14 @@ header{
   }
 
   section{
+    cursor: pointer;
     background-color: $blue;
     position: absolute;
     right: 0;
     top: 0;
     width: 130px;
     height: 162px;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     text-align: center;
     color: #ffffff;
@@ -88,20 +101,77 @@ header{
       display: none;
     }
   }
-
- .menu{
-  display: none;
-
-  
-  
-  @media screen and (max-width: 950px) {
-    display: block;
-  }
- }
-
-
 }
 
 
+.menu{
+  margin-top: 100px;
+  display: none;
+  position: fixed;
+  top: -9px;
+  right: 0;
+  background-color: #fff;
+  text-align: center;
+  color: $blue;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  @media screen and (max-width: 428px) {
+    top: -19px;
+  }
+  .menuToggle{
+      li{
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    // margin: 10% 15% ;
+    a{
+      display: inline-block;
+      width: 250px;
+      padding: 10% 15%;
+      color: $blue;
+      &:hover{
+        background-color: $yellow;
+        color: #ffffff;
+      }
+    }
+  }
+
+  }
+ 
+
+  
+  
+  // @media screen and (max-width: 900px) {
+  //   display: none;
+  // }
+ }
 
 
+//  <footer class="wrapper_full">
+//         <div>
+//             <img src="" alt="LOGO">
+
+//             <p>
+//                 星期一至星期五、8:00~12:00,13:30~17:30&nbsp
+//                 地址： 新北市三重區重新路三段125號&nbsp
+//                 電話：02-22662266&nbsp
+//                 傳真：02-25255525&nbsp
+//             </p>
+
+//             <div class="line"></div>
+
+//             <ul>
+//                 <li><a href=""><i class="fa-brands fa-facebook-f"></i><p>Facebook</p></a></li>
+//                 <li><a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a></li>
+//                 <li><a href=""><i class="fa-brands fa-twitter"></i><p>Twitter</p></a></li>
+//                 <li><a href=""><i class="fa-brands fa-youtube"></i><p>Youtube</p></a></li>
+//             </ul>
+
+//         </div>
+
+//         <div>
+//             <p>copyright © 2023 designed by DannyLi</p>
+//         </div>
+
+
+//     </footer>

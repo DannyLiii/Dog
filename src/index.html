@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
     <title>鄰家</title>
 </head>
-<body>
+<body onclick="">
 
     <header class="wrapper_full">
         <div>
@@ -40,47 +40,89 @@
             <p class="font16">立即捐款</p>
         </section>
         
-        <div class="menu">
-            <ul>
-                <li><a href="">關於我們</a></li>
-                <li><a href="">最新消息</a></li>
-                <li><a href="">浪犬專區</a></li>
-                <li><a href="">志工招募</a></li>
-                <li><a href="">聯絡我們</a></li>
-            </ul>
-        </div>
+        
 
     </header>
 
+    <div class="menu">
+        <ul class="menuToggle">
+            <li><a href="">Home</a></li>
+            <li><a href="">關於我們</a></li>
+            <li><a href="">最新消息</a></li>
+            <li><a href="">浪犬專區</a></li>
+            <li><a href="">志工招募</a></li>
+            <li><a href="">聯絡我們</a></li>
+            <li><a href="">立即捐款</a></li>
+        </ul>
+    </div>
+
     
-    <footer class="wrapper_full">
-        <div>
-            <img src="" alt="LOGO">
+ <footer class="wrapper_full">
+    <div>
+        <img src="" alt="LOGO">
 
-            <p>
-                星期一至星期五、8:00~12:00,13:30~17:30&nbsp
-                地址： 新北市三重區重新路三段125號&nbsp
-                電話：02-22662266&nbsp
-                傳真：02-25255525&nbsp
-            </p>
+        <p>
+            星期一至星期五、8:00~12:00,13:30~17:30&nbsp
+            地址： 新北市三重區重新路三段125號&nbsp
+            電話：02-22662266&nbsp
+            傳真：02-25255525&nbsp
+        </p>
 
-            <div class="line"></div>
+        <div class="line"></div>
 
-            <ul>
-                <li><a href=""><i class="fa-brands fa-facebook-f"></i><p>Facebook</p></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i><p>Twitter</p></a></li>
-                <li><a href=""><i class="fa-brands fa-youtube"></i><p>Youtube</p></a></li>
-            </ul>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i><p>Facebook</p></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i><p>Twitter</p></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i><p>Youtube</p></a></li>
+        </ul>
 
-        </div>
+    </div>
 
-        <div>
-            <p>copyright © 2023 designed by DannyLi</p>
-        </div>
+    <div>
+        <p>copyright © 2023 designed by DannyLi</p>
+    </div>
 
 
-    </footer>
+</footer>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".fa-bars").click(function() {
+                $(".menu").animate({width:'toggle'},300);
+                // $("body").toggleClass("menu-active");
+            });
+        });
+
+
+        // $(document).ready(
+        //     function(){
+        //         $('.fa-bars').click(function(){
+        //             $('.menu').toggleClass('show');
+        //             $('body').toggleClass('menu-open');
+        //         });
+        // });
+
+        // $(function(){
+        //     $('.fa-bars').click(function(){
+        //     $('.menu').slideToggle();
+        //     })
+        // })
+        // function menuBar() {
+        //     var menu = document.querySelector('.menu');
+        //     menu.style.display = 'block' ;
+        // }
+
+        // function hideMenu(event) {
+        //     var menu = document.querySelector('.menu');
+        //     if (event.target !== menu && !menu.contains(event.target)) {
+        //     menu.style.display = 'none';
+        //     }
+        // }
+      
+    </script>
     
 </body>
 </html>
