@@ -32,15 +32,16 @@ header{
     @media screen and (max-width: 900px) {
       display: none;
     }
+
     ul{
         display: flex;
         justify-content: space-around;
+
         li{
           margin: 0 4.5%;
           @media screen and (max-width: 1280px) {
             margin: 0 2%;
           }
-          
             a{
               display: block;
               font-size: 19px;
@@ -66,7 +67,6 @@ header{
       @media screen and (max-width: 900px) {
         display: inline;
       }
-      
     }
 
     @media screen and (max-width: 1280px) {
@@ -91,18 +91,18 @@ header{
     box-shadow: 0 0 5px 0 gray;
     margin: auto;
     padding: 3% 5px;
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+
     .line{
       background-color: #ffffff;
       width: 70%;
       height: 1px;
       margin: 10% auto;
     }
-    @media screen and (max-width: 1280px) {
-      display: none;
-    }
   }
 }
-
 
 .menu{
   margin-top: 100px;
@@ -119,59 +119,158 @@ header{
   @media screen and (max-width: 428px) {
     top: -19px;
   }
+
   .menuToggle{
+    li{
+      border-bottom: 1px solid #cdcdcd;
+      border-left: 1px solid #cdcdcd;
+
+      a{
+        display: inline-block;
+        width: 250px;
+        padding: 10% 15%;
+        color: $blue;
+        &:hover{
+          background-color: $yellow;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// ------------------- footer ------------------- //
+
+footer{
+  display: flex;
+  flex-direction: column;
+
+  .main{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    @media screen and (max-width: 900px) {
+      height: 150px;
+    }
+    @media screen and (max-width: 428px) {
+      height: 110px;
+      flex-direction: column;
+    }
+
+    img{
+      width: 78px;
+      height: 123px;
+      margin: auto 0;
+      @media screen and (max-width: 900px) {
+        width: 65px;
+        height: 103px;
+        margin: auto 15px;
+      }
+      @media screen and (max-width: 428px) {
+        display: none;
+      }
+    }
+
+    .text{
+      width: 339px;
+      height: 116px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: auto 0;
+      @media screen and (max-width: 900px){
+        width: 280px;
+      }
+      @media screen and (max-width: 720px){
+        display: none;
+      }
+      
       li{
-    border-bottom: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
-    // margin: 10% 15% ;
-    a{
-      display: inline-block;
-      width: 250px;
-      padding: 10% 15%;
-      color: $blue;
-      &:hover{
-        background-color: $yellow;
-        color: #ffffff;
+        margin: 5px;
+        @media screen and (max-width: 900px){
+          font-size: 14px;
+        }
+      }
+    }
+
+    .line{
+      width: 1px;
+      height: 75%;
+      background-color:$black;
+      margin: auto 0;
+      @media screen and (max-width: 720px){
+        display: none;
+      }
+    }
+
+    .icon{
+      display: flex;
+      text-align: center;
+      margin: auto 0;
+
+      li{
+        margin: 15px;
+        @media screen and (max-width: 900px) {
+          margin: 5px;
+        }
+        @media screen and (max-width: 720px){
+          margin: 0 15px;
+        }
+        @media screen and (max-width: 428px) {
+         margin: 15px auto;
+        }
+        
+        a{
+          color: $blue;
+
+          i{
+            margin-bottom: 5px;
+            font-size: 40px;
+            @media screen and (max-width: 900px) {
+              font-size: 35px;
+            }
+          }
+
+          p{
+            @media screen and (max-width: 900px) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: 720px) {
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
   }
 
+  .declared{
+    padding: 5px;
+    height: 40px;
+    background-color: $blue;
+    @media screen and (max-width: 900px){
+      height: 40px;
+    }
+    
+    h5{
+      font-size: 20px;
+      margin: 5px auto;
+      color: #ffffff;
+      text-align: center;
+      
+      @media screen and (max-width: 428px){
+        font-size: 16px;
+        margin: 7px auto;
+      }
+      
+    }
   }
- 
+}
 
-  
-  
-  // @media screen and (max-width: 900px) {
-  //   display: none;
-  // }
- }
-
-
-//  <footer class="wrapper_full">
-//         <div>
-//             <img src="" alt="LOGO">
-
-//             <p>
-//                 星期一至星期五、8:00~12:00,13:30~17:30&nbsp
-//                 地址： 新北市三重區重新路三段125號&nbsp
-//                 電話：02-22662266&nbsp
-//                 傳真：02-25255525&nbsp
-//             </p>
-
-//             <div class="line"></div>
-
-//             <ul>
-//                 <li><a href=""><i class="fa-brands fa-facebook-f"></i><p>Facebook</p></a></li>
-//                 <li><a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a></li>
-//                 <li><a href=""><i class="fa-brands fa-twitter"></i><p>Twitter</p></a></li>
-//                 <li><a href=""><i class="fa-brands fa-youtube"></i><p>Youtube</p></a></li>
-//             </ul>
-
-//         </div>
-
-//         <div>
-//             <p>copyright © 2023 designed by DannyLi</p>
-//         </div>
-
-
-//     </footer>

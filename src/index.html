@@ -58,19 +58,19 @@
 
     
  <footer class="wrapper_full">
-    <div>
-        <img src="" alt="LOGO">
+    <div class="main">
+        <img src="./img/footer/logo2.jpg" alt="LOGO">
 
-        <p>
-            星期一至星期五、8:00~12:00,13:30~17:30&nbsp
-            地址： 新北市三重區重新路三段125號&nbsp
-            電話：02-22662266&nbsp
-            傳真：02-25255525&nbsp
-        </p>
+        <ul class="text">
+            <li>星期一至星期五、8:00~12:00,13:30~17:30&nbsp</li>
+            <li>地址： 新北市三重區重新路三段125號&nbsp</li>
+            <li>電話：02-22662266&nbsp</li>
+            <li>傳真：02-25255525&nbsp</li>
+        </ul>
 
         <div class="line"></div>
 
-        <ul>
+        <ul class="icon">
             <li><a href=""><i class="fa-brands fa-facebook-f"></i><p>Facebook</p></a></li>
             <li><a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a></li>
             <li><a href=""><i class="fa-brands fa-twitter"></i><p>Twitter</p></a></li>
@@ -79,8 +79,8 @@
 
     </div>
 
-    <div>
-        <p>copyright © 2023 designed by DannyLi</p>
+    <div class="declared">
+        <h5>copyright © 2023 designed by DannyLi</h5>
     </div>
 
 
@@ -92,35 +92,11 @@
         $(document).ready(function() {
             $(".fa-bars").click(function() {
                 $(".menu").animate({width:'toggle'},300);
-                // $("body").toggleClass("menu-active");
             });
         });
 
 
-        // $(document).ready(
-        //     function(){
-        //         $('.fa-bars').click(function(){
-        //             $('.menu').toggleClass('show');
-        //             $('body').toggleClass('menu-open');
-        //         });
-        // });
 
-        // $(function(){
-        //     $('.fa-bars').click(function(){
-        //     $('.menu').slideToggle();
-        //     })
-        // })
-        // function menuBar() {
-        //     var menu = document.querySelector('.menu');
-        //     menu.style.display = 'block' ;
-        // }
-
-        // function hideMenu(event) {
-        //     var menu = document.querySelector('.menu');
-        //     if (event.target !== menu && !menu.contains(event.target)) {
-        //     menu.style.display = 'none';
-        //     }
-        // }
       
     </script>
     
