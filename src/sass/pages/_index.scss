@@ -2,6 +2,7 @@ body{
   position: relative;
 }
 
+// -------------------- header -------------------- //
 header{
   position: relative;
   background-color: #ffffff;
@@ -108,7 +109,7 @@ header{
   margin-top: 100px;
   display: none;
   position: fixed;
-  top: -9px;
+  top: -10px;
   right: 0;
   background-color: #fff;
   text-align: center;
@@ -116,8 +117,9 @@ header{
   width: 250px;
   height: 100%;
   z-index: 100;
+  border-top: 1px solid #cdcdcd;
   @media screen and (max-width: 428px) {
-    top: -19px;
+    top: -20px;
   }
 
   .menuToggle{
@@ -139,12 +141,80 @@ header{
   }
 }
 
+// -------------------- header -------------------- //
+
+
+.banner{
+  background-image: url(../../img/index/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 20%;
+  position: relative;
+  
+  .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8%;
+    margin-left: 4%;
+    @media screen and (max-width: 720px) {
+      width: 190px;
+    }
+
+    h1{
+      font-size: 3.5vw;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 5px 5px 5px #777 ;
+      margin-bottom: 10%;
+    }
+
+    h5{
+      font-size: 1.7vw;
+      position: relative;
+      color: $black;
+      margin-bottom: 10%;
+      font-weight: bold;
+    }
+
+    a{
+      position: absolute;
+      display: flex;
+      right: 0;
+
+      p{
+        color: $black;
+        font-size: 1.3vw;
+        line-height: 2px;
+        margin-left: 5px;
+        margin-top: 10px;
+        border-bottom: 1px solid $black;
+        @media screen and (max-width: 900px) {
+          margin-top: 15%;
+        }
+      }
+      
+      img{
+        width: 25px;
+      }
+    }
+  }
+  
+  
+    
+
+  
+
+
+}
 
 
 
 
 
-// ------------------- footer ------------------- //
+// -------------------- footer -------------------- //
 
 footer{
   display: flex;
