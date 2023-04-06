@@ -104,7 +104,7 @@ header{
     }
   }
 }
-
+ // --- 菜單 --- //
 .menu{
   margin-top: 100px;
   display: none;
@@ -121,7 +121,7 @@ header{
   @media screen and (max-width: 428px) {
     top: -20px;
   }
-
+ // --- 菜單背景 --- //
   .menuToggle{
     li{
       border-bottom: 1px solid #cdcdcd;
@@ -144,6 +144,7 @@ header{
 // -------------------- banner -------------------- //
 
 .banner{
+   // --- 背景圖片 --- //
   background-image: url(../../img/index/banner.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -153,7 +154,7 @@ header{
   position: relative;
   min-height: 200px;
   
-  
+   // --- 左方文字 --- //
   .text{
     position: absolute;
     top: 0;
@@ -161,6 +162,9 @@ header{
     margin-top: 8%;
     margin-left: 4%;
     z-index: 2;
+    @media screen and (max-width: 900px) {
+      margin-top: 6%;
+    }
     @media screen and (max-width: 720px) {
       margin-top: 5%;
     }
@@ -174,11 +178,17 @@ header{
       font-weight: bold;
       text-shadow: 5px 5px 5px #777 ;
       margin-bottom: 10%;
+      @media screen and (max-width: 1280px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 36px;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 34px;
+      }
       @media screen and (max-width: 720px) {
         font-size: 24px;
-      }
-      @media screen and (max-width: 428px) {
-        font-size: 16px;
       }
     }
 
@@ -197,6 +207,15 @@ header{
       position: absolute;
       display: flex;
       right: 0;
+      @media screen and (max-width: 1050px) {
+        right: 35px;
+      }
+      @media screen and (max-width: 800px) {
+        right: 0;
+      }
+      @media screen and (max-width: 800px) {
+        right: 10px;
+      }
 
       p{
         color: $black;
@@ -223,6 +242,7 @@ header{
     }
   }
   
+   // --- 小於720現色塊遮罩 --- //
   .w_block{
     display: none;
     position: absolute;
@@ -234,7 +254,7 @@ header{
     left: 0%;
     background: hsla(0,0%,100%,.7);
     // filter: blur(7px);  
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 800px) {
       display: block;
     }
     @media screen and (max-width: 550px) {
@@ -247,12 +267,6 @@ header{
       width: 55%;
     }
   }
-  
-    
-
-  
-
-
 }
 
 // -------------------- 成果展示 -------------------- //
@@ -260,32 +274,25 @@ header{
 .Achievement{
   position: relative;
   overflow: hidden;
-
-
+ // --- 背景色塊 --- //
   .bg{
     div{
       background-color: $yellow;
       width: 100%;
       padding: 5% 0;
-      @media screen and (max-width: 620px) {
-        padding: 6% 0;
+      @media screen and (max-width: 720px) {
+        padding: 7% 0;
       }
-      @media screen and (max-width: 500px) {
-        padding: 6.5% 0;
+      @media screen and (max-width: 600px) {
+        padding: 8% 0;
       }
       @media screen and (max-width: 428px) {
-        padding: 10% 0;
+        padding: 12% 0;
       }
-      @media screen and (max-width: 375px) {
-        padding: 9% 0;
-      }
-
-    }
-    
-    svg{
     }
   }
 
+   // --- 內容 --- //
   .main{
     position: absolute;
     width: 100%;
@@ -294,40 +301,54 @@ header{
     display: flex;
     flex-direction: column; 
     z-index: 2; 
+     // --- 標題 --- //
     .main_top{
       display: flex;
-      margin-top: 3%;
+      justify-content: center;
+      
+      margin: 3% 0 ;
       @media screen and (max-width: 720px) {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        // margin-top: 10px;
+        // margin-bottom: 10px;
       }
       .line{
         width: 25%;
         height: 1px;
         background-color: #ffffff;
-        margin: 5% auto;
+        margin: auto ;
         @media screen and (max-width:720px) {
           margin: 3% auto;
+        }
+        @media screen and (max-width:600px) {
+          width: 21%;
+        }
+        @media screen and (max-width:428px) {
+          width: 15%;
         }
       }
       .text{
         h1{
-          margin: 5% auto;
           text-align: center;
-          font-size: 2.5vw;
+          font-size: 2.25em;
           color: #ffffff;
-          @media screen and (max-width:720px) {
-            margin: 3% auto 5%;
+          @media screen and (max-width:1000px) {
+            font-size: 28px;
           }
-          @media screen and (max-width:375px) {
-            margin: 0% auto 5%;
+          @media screen and (max-width:900px) {
+            font-size: 24px;
           }
+          // @media screen and (max-width:720px) {
+          //   margin: 3% auto 5%;
+          // }
+          // @media screen and (max-width:375px) {
+          //   margin: 0% auto 5%;
+          // }
         }
       }
     }
 
+     // --- 主要內容 --- //
     .main_bottom{
-      
       .main1{
         display: flex;
         justify-content: space-around;
@@ -365,7 +386,7 @@ header{
           }
         }
       }
-
+      // --- 428px輪播 --- //
       .swiper-container{
         display: none;
         @media screen and (max-width:428px) {
@@ -403,6 +424,220 @@ header{
 
 // -------------------- 浪犬專區 -------------------- //
 
+.stray{
+  max-width: 1280px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: 5% auto;
+  @media screen and (max-width:720px) {
+    flex-direction: column;
+  }
+  .head{
+    display: none;
+    
+    @media screen and (max-width:720px) {
+      display: flex;
+      margin-bottom: 5%;
+    }
+    h2{
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .line{
+      width: 30%;
+      height: 1px;
+      background-color: $black;
+      margin: auto;
+    }
+  }
+  // --- 左邊內容 --- // 
+  .introduce{
+    width: 50%;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    @media screen and (max-width:720px) {
+      order: 2;
+      margin: 5% auto 0;
+      width: 100%;
+    }
+    .head{
+      display: flex;
+      @media screen and (max-width:720px) {
+        display: none;
+      }
+      .line{
+        width: 10vw;
+        height: 1px;
+        background-color: $black;
+        margin: auto;
+       
+      }
+      h2{
+        font-size: 2.25em;
+        text-align: center;
+        @media screen and (max-width:1000px) {
+          font-size: 28px;
+        }
+        @media screen and (max-width:900px) {
+          font-size: 24px;
+        }
+      }
+      @media screen and (max-width:1280px) {
+        margin-bottom: 5%;
+      }
+      @media screen and (max-width:850px) {
+        margin-bottom: 2%;
+      }
+    }
+
+    .body{
+      display: flex;
+      flex-direction: column;
+      // margin: 0 10%;
+      justify-content: center;
+      .top{
+        width: 100%;
+        display: flex;
+        padding: 0 auto;
+        justify-content: center;
+        @media screen and (max-width:720px) {
+          justify-content: start;
+          margin-left: 10%;
+        }
+        h4{
+          display: block;
+          font-size: 1.875em;
+          @media screen and (max-width:1000px) {
+            font-size: 24px;
+          }
+          @media screen and (max-width:850px) {
+            font-size: 20px;
+          }
+          // @media screen and (max-width:650px) {
+          //   font-size: 18px;
+          // }
+        }
+        .line{
+          width: 15vw;
+          height: 1px;
+          background-color: $black;
+          margin: auto 0;
+          margin-left: 5%;
+          @media screen and (max-width:720px) {
+            width: 40%;
+            margin-left: 3%;
+          }
+        }
+      }
+      p{
+        width: 58%;
+        margin: 5% auto 0;
+        line-height: 1.5;
+        font-size: 1.25em;
+        @media screen and (max-width:1280px) {
+          font-size: 1.7vw;
+        }
+        @media screen and (max-width:900px) {
+          width: 70%;
+        }
+        
+        @media screen and (max-width:720px) {
+          width: 60%;
+          font-size: 1em;
+          margin-bottom: 5%;
+        }
+        @media screen and (max-width:428px) {
+          font-size: 14px;
+        }
+      }
+      
+    }
+    .bottom{
+      display: flex;
+      justify-content: space-around;
+      margin: 0 15%;
+      .arrow{
+        i{
+          color: $black;
+          border: 2px solid $black;
+          padding: 5px 6px;
+          border-radius: 50%;
+          cursor: pointer;
+          &:hover{
+            color: white;
+            background-color: #b3b3b3;
+            border: 2px solid white;
+          }
+          // @media screen and (max-width:900px) {
+          //  font-size: 10px;
+          }
+        }
+      }
+      a{
+        display: flex;
+  
+        p{
+          color: $black;
+          font-size: 1.1em;
+          line-height: 2px;
+          margin-left: 5px;
+          margin-top: 15px;
+          border-bottom: 1px solid $black;
+          // @media screen and (max-width: 720px) {
+          //   font-size: 15px;
+          //   margin-top: 10px;
+          //   margin-bottom: 5px;
+          // }
+        }
+        
+        img{
+          width: 30px;
+          @media screen and (max-width: 720px) {
+            width: 25px;
+            height: 25px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  // --- 右邊照片 --- //
+    .picture{
+      width: 50%;
+      display: block;
+      @media screen and (max-width:720px) {
+      display: flex;
+      order: 1;
+      margin: 0 auto;
+      width: 80%;
+      }
+      img{
+        display: block;
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+// -------------------- 守護浪犬 -------------------- //
+
+.guard{
+  .bg{
+    svg{
+      display: block;
+      transform: rotate(180deg);
+    }
+    div{
+      width: 100%;
+      padding: 5% 0;
+      background-color: $yellow;
+    }
+  }
+}
 
 
 
